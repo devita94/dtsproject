@@ -1,4 +1,6 @@
 import tkinter as tk
-import requests
 
-app = tk.Tk()
+root = tk.Tk()
+
+
+root.mainloop()
