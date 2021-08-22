@@ -17,7 +17,9 @@ input_label = tk.Label(
     width=100,
     height=30
 )
+input_label.pack()
 frm_entry = tk.Entry()
+frm_entry.pack()
 btn_submit = tk.Button(
     text="Cari",
     width=50,
