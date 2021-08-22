@@ -35,8 +35,8 @@ def find_word():
     return worddict
 
 def check_input():
-    user_input = ent_keyword.get()
+    user_input = frm_entry.get()
     #if user_input in find_word():
     return user_input
-    
+
 window.mainloop()
