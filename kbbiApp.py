@@ -9,9 +9,21 @@ window.title("KBBI Apps")
 frame = tk.Frame(master=window, bg="white")
 frame.pack(fill=tk.BOTH, expand=TRUE)
 title_frame = tk.Label(master = frame, text="Selamat Datang di KBBI Apps", bg="#317FE2")
-label_keyword = tk.Label(text="Cari Kata")
+input_label = tk.Label(
+    text="Cari Kata",
+    foreground="black",  
+    background="white",
+    width=100,
+    height=30
+)
 frm_entry = tk.Entry()
-btn_search = tk.Button()
+btn_submit = tk.Button(
+    text="Cari",
+    width=50,
+    height=20,
+    bg="blue",
+    fg="white",
+)
 
 
 def find_word():
