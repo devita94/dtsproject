@@ -9,6 +9,7 @@ window.title("KBBI Apps")
 frame = tk.Frame(master=window, bg="white")
 frame.pack(fill=tk.BOTH, expand=TRUE)
 title_frame = tk.Label(master = frame, text="Selamat Datang di KBBI Apps", bg="#317FE2")
+title_frame.pack()
 input_label = tk.Label(
     text="Cari Kata",
     foreground="black",  
