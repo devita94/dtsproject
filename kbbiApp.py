@@ -4,9 +4,13 @@ from tkinter.constants import X
 window = tk.Tk()
 window.title("KBBI Apps")
 
-frm_entry = tk.Frame(master=window)
-ent_keyword = tk.Entry(master=frm_entry, width=X)
-label_keyword = tk.Label(master=frm_entry, text="Cari Kata")
+#untuk window
+frm_title = tk.Frame(master=window, bg="#317FE2")
+frm_title.pack(fill=tk.X, side=tk.LEFT)
+label_keyword = tk.Label(text="Cari Kata")
+frm_entry = tk.Entry()
+btn_search = tk.Button()
+
 
 def find_word():
     worddict = {
