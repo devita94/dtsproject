@@ -1,12 +1,14 @@
 import tkinter as tk
-from tkinter.constants import X
+from tkinter.constants import TRUE, X
+from typing import Text
 
 window = tk.Tk()
 window.title("KBBI Apps")
 
 #untuk window
-frm_title = tk.Frame(master=window, bg="#317FE2")
-frm_title.pack(fill=tk.X, side=tk.LEFT)
+frame = tk.Frame(master=window, bg="white")
+frame.pack(fill=tk.BOTH, expand=TRUE)
+title_frame = tk.Label(master = frame, text="Selamat Datang di KBBI Apps", bg="#317FE2")
 label_keyword = tk.Label(text="Cari Kata")
 frm_entry = tk.Entry()
 btn_search = tk.Button()
