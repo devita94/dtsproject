@@ -38,11 +38,5 @@ def check_input():
     user_input = ent_keyword.get()
     #if user_input in find_word():
     return user_input
-
-btn_search = tk.Button(
-    master= window,
-    text="Submit",
-    command=find_word()
-)
-
+    
 window.mainloop()
