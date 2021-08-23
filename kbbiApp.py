@@ -7,7 +7,7 @@ window = tk.Tk()
 window.title("KBBI Apps")
 
 #untuk window
-frame = tk.Frame(master=window, bg="#317FE2")
+frame = tk.Frame(master=window, bg="blue", width=300, height=300)
 frame.pack(fill=tk.BOTH, expand=TRUE)
 title_frame = tk.Label(master = frame, text="Selamat Datang di KBBI Apps", bg="#317FE2")
 title_frame.pack()
@@ -17,13 +17,7 @@ input_label = tk.Label(
 input_label.pack(expand=TRUE)
 frm_entry = tk.Entry()
 frm_entry.pack(fill=tk.BOTH, expand=TRUE)
-btn_submit = tk.Button(
-    text="Cari",
-    width=50,
-    height=20,
-    bg="blue",
-    fg="white",
-)
+btn_submit = tk.Button(text="Cari", background="#317FE2", width=30, height=10)
 btn_submit.pack()
 
 def check_input():
