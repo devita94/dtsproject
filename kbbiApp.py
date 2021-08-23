@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import *
 import tkinter
+from typing import Any
 from mypackage import dictionary
 
 window = tk.Tk()
@@ -22,9 +23,10 @@ btn_submit.pack()
 
 def check_input():
     user_input = frm_entry.get()
-    if user_input in dictionary.myDictionary():
+    if user_input in dictionary.myDictionary(myWord=Any):
         try:
-            print(dictionary.myDictionary)
+            print(dictionary.myDictionary(myWord=Any))
+            print(dictionary.myDictionary(mySynonym=Any))
         except:
             print("Kata Tidak ditemukan")
     return user_input
