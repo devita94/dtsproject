@@ -1,12 +1,13 @@
 import tkinter as tk
-from tkinter.constants import TRUE, X
-from typing import Text
+from tkinter import *
+import tkinter
+from mypackage import dictionary
 
 window = tk.Tk()
 window.title("KBBI Apps")
 
 #untuk window
-frame = tk.Frame(master=window, bg="white")
+frame = tk.Frame(master=window, bg="#317FE2")
 frame.pack(fill=tk.BOTH, expand=TRUE)
 title_frame = tk.Label(master = frame, text="Selamat Datang di KBBI Apps", bg="#317FE2")
 title_frame.pack()
@@ -17,7 +18,7 @@ input_label = tk.Label(
     width=100,
     height=30
 )
-input_label.pack()
+input_label.pack(fill=tk.BOTH, expand=TRUE)
 frm_entry = tk.Entry()
 frm_entry.pack()
 btn_submit = tk.Button(
@@ -27,15 +28,7 @@ btn_submit = tk.Button(
     bg="blue",
     fg="white",
 )
-
-
-def find_word():
-    worddict = {
-        "ayah" : "orang tua kandung laki-laki; bapak",
-        "ibu" : "wanita yang telah melahirkan seseorang",
-        "anak" : " orang yang berasal dari atau dilahirkan di (suatu negeri, daerah, dan sebagainya)"
-    }
-    return worddict
+btn_submit.pack()
 
 def check_input():
     user_input = frm_entry.get()
