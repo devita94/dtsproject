@@ -12,15 +12,11 @@ frame.pack(fill=tk.BOTH, expand=TRUE)
 title_frame = tk.Label(master = frame, text="Selamat Datang di KBBI Apps", bg="#317FE2")
 title_frame.pack()
 input_label = tk.Label(
-    text="Cari Kata",
-    foreground="black",  
-    background="white",
-    width=100,
-    height=30
+    text="Silakan cari kata dengan mengetikkan pada kolom dibawah ini"
 )
-input_label.pack(fill=tk.BOTH, expand=TRUE)
+input_label.pack(expand=TRUE)
 frm_entry = tk.Entry()
-frm_entry.pack()
+frm_entry.pack(fill=tk.BOTH, expand=TRUE)
 btn_submit = tk.Button(
     text="Cari",
     width=50,
