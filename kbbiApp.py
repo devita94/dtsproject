@@ -22,7 +22,11 @@ btn_submit.pack()
 
 def check_input():
     user_input = frm_entry.get()
-    #if user_input in find_word():
+    if user_input in dictionary.myDictionary():
+        try:
+            print(dictionary.myDictionary)
+        except:
+            print("Kata Tidak ditemukan")
     return user_input
 
 window.mainloop()
